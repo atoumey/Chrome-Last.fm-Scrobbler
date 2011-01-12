@@ -15,6 +15,7 @@
       "http://post.audioscrobbler.com/",
       "http://post2.audioscrobbler.com/",
       "http://gdata.youtube.com/feeds/api/videos/"
+      "http://listeningroom.fettig.net/"
    ],
    
    "content_scripts": [
@@ -26,6 +27,10 @@
       "matches": ["http://www.youtube.com/watch*"],
       "js": ["jquery-1.4.2.min.js", "jquery.dump.js", "youtube.js"],
       "css": ["youtube.css"]
+      },
+      {
+       "matches": [ "http://listeningroom.fettig.net/room/*" ],
+       "js": [ "listeningroom.js" ]
       }
    ]
 
